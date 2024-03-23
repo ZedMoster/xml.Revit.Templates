@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{54D6B6B5-F661-4B55-B787-46BE8CC5C6A3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Build\Build.Configuration.cs = Build\Build.Configuration.cs
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xml.Revit.Templates", "xml.Revit.Templates.csproj", "{60315C2E-AD1E-45C3-BA42-673DF50DDAD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60315C2E-AD1E-45C3-BA42-673DF50DDAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60315C2E-AD1E-45C3-BA42-673DF50DDAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10BE71BE-EF92-4BB7-B6DE-F85234074A0C}
+	EndGlobalSection
+	GlobalSection(RiderSharedRunConfigurations) = postSolution
+		File = source\Nice3point.Revit.AddIn.Solution\.run\Nuke.run.xml
+	EndGlobalSection
+EndGlobal

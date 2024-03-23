@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "xml",
+  "name": "xml Revit AddIn",
+  "shortName": "xml-revit-addin",
+  "identity": "xml.Revit.AddIn",
+  "defaultName": "xmlRevitAddIn",
+  "sourceName": "xml.Revit.AddIn",
+  "description": "Template for creating a Revit add-in",
+  "classifications": [
+    "Revit",
+    "AddIn",
+    "Library"
+  ],
+  "tags": {
+    "type": "project",
+    "language": "C#",
+    "platform": ".NET"
+  },
+  "preferNameDirectory": true,
+  "guids": [
+    "AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA"
+  ]
+
+}

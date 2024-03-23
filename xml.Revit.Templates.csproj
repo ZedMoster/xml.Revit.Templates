@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <NoWarn>$(NoWarn);NU5128;NU5110;NU5111</NoWarn>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <OutputPath>output</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <Version>1.0.2</Version>
+        <Authors>xml</Authors>
+        <PackageId>xml.Revit.Templates</PackageId>
+        <Description>Templates for Revit add-ins development</Description>
+        <PackageTags>revit;templates;addin</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageIcon>images\PackageIcon.png</PackageIcon>
+		<PackageLicenseFile>License.md</PackageLicenseFile>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include=".nuget\PackageIcon.png" PackagePath="images\" Pack="true" />
+        <None Include="License.md" PackagePath="" Pack="true" />
+        <None Include="Readme.md" PackagePath="\" Pack="True" />
+        <Content Include="source\**\*" Exclude="**\bin\**\*;**\obj\**\*" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+
+</Project>
