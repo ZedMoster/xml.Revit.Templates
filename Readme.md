@@ -7,10 +7,8 @@
 
 该模板包含用于快速创建 Revit 附加命令的项目模板
 
-## Template Features
+推荐使用拓展包 `https://www.nuget.org/packages/xml.Revit.Toolkit`
 
-- 2020-2024 Revit 版本构建项目
-- 支持编译完成自动更新到Revit
 
 ## Installation
 
