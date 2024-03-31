@@ -83,4 +83,24 @@
 		<AssemblyName>$(AssemblyName)$(PackageAssemblyVersion)</AssemblyName>
 	</PropertyGroup>
 
+    <Target Name="CopyFiles" AfterTargets="CoreBuild">
+        <ItemGroup>
+            <RootItem Include="$(ProjectDir)*.addin"/>
+            <AddinItem Include="$(TargetDir)**\*"/>
+        </ItemGroup>
+
+        <PropertyGroup>
+            <RootDir>bin\$(RevitVersion) $(Configuration)\</RootDir>
+            <AddinDir>$(RootDir)$(AssemblyName)\</AddinDir>
+        </PropertyGroup>
+
+        <Copy SourceFiles="@(RootItem)" DestinationFolder="$(RootDir)"/>
+        <Copy SourceFiles="@(AddinItem)" DestinationFolder="$(AddinDir)\%(RecursiveDir)"/>
+
+        <ItemGroup>
+            <AddinFiles Include="$(RootDir)**\*"/>
+        </ItemGroup>
+        
+    </Target>
+
 </Project>
