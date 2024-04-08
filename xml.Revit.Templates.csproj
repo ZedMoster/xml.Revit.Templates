@@ -12,7 +12,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <Version>1.0.8</Version>
+        <Version>1.1.0</Version>
         <Authors>xml</Authors>
         <PackageId>xml.Revit.Templates</PackageId>
         <Description>Templates for Revit add-ins development</Description>
