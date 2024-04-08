@@ -9,13 +9,19 @@
 
 推荐使用拓展包 `https://www.nuget.org/packages/xml.Revit.Toolkit`
 
-
 ## Installation
 
 1. 安装 [.Net SDK](https://dotnet.microsoft.com/download)
-2. 运行 `dotnet new install xml.Revit.Templates` 安装项目模板
+2. 运行 `dotnet new install xml.Revit.Templates` 安装更新项目模板
 
 ## code snipate
+
+<p align="left">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" width="750" srcset="https://github.com/ZedMoster/xml.Revit.Templates/assets/xmlRevitCommand.gif">
+        <img alt="xmlRevitCommand" width="750" src="https://github.com/ZedMoster/xml.Revit.Templates/assets/xmlRevitCommand.gif">
+    </picture>
+</p>
 
 打开文件夹
 
@@ -67,4 +73,4 @@
 
 重新启动 `Visual Studio 2022` 
 
-输入 `xmlRevitCommand`命令可快速创建拓展命令
+输入 `xmlRevitCommand`命令可快速创建Revit功能命令
