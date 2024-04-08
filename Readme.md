@@ -18,8 +18,8 @@
 
 <p align="left">
     <picture>
-        <source media="(prefers-color-scheme: dark)" width="750" srcset="assets/xmlRevitCommand.gif">
-        <img alt="xmlRevitCommand" width="750" src="assets/xmlRevitCommand.gif">
+        <source media="(prefers-color-scheme: dark)" width="750" srcset="https://raw.githubusercontent.com/ZedMoster/xml.Revit.Templates/main/assets/xmlRevitCommand.gif">
+        <img alt="xmlRevitCommand" width="750" src="https://raw.githubusercontent.com/ZedMoster/xml.Revit.Templates/main/assets/xmlRevitCommand.gif">
     </picture>
 </p>
 
