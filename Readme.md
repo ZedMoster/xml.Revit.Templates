@@ -1,9 +1,9 @@
 # .Net 平台上快速为 Revit 创建插件
 
-<p align="center">
-  <a href="https://www.nuget.org/packages/xml.Revit.Templates"><img src="https://img.shields.io/nuget/v/xml.Revit.Templates?style=for-the-badge"></a>
-  <a href="https://www.nuget.org/packages/xml.Revit.Templates"><img src="https://img.shields.io/nuget/dt/xml.Revit.Templates?style=for-the-badge"></a>
-</p>
+[![Nuget](https://img.shields.io/nuget/vpre/xml.Revit.Templates?style=for-the-badge)](https://www.nuget.org/packages/xml.Revit.Templates)
+[![Downloads](https://img.shields.io/nuget/dt/xml.Revit.Templates?style=for-the-badge)](https://www.nuget.org/packages/xml.Revit.Templates)
+[![Last Commit](https://img.shields.io/github/last-commit/ZedMoster/xml.Revit.Templates/dev?style=for-the-badge)](https://github.com/ZedMoster/xml.Revit.Templates/commits/main)
+
 
 该模板包含用于快速创建 Revit 附加命令的项目模板
 
