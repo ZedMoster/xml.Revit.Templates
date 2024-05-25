@@ -12,11 +12,11 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <Version>1.1.0</Version>
+        <Version>1.2.0</Version>
         <Authors>xml</Authors>
         <PackageId>xml.Revit.Templates</PackageId>
         <Description>Templates for Revit add-ins development</Description>
-        <PackageTags>revit;templates;addin</PackageTags>
+        <PackageTags>revit;addin;templates;</PackageTags>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageIcon>images\PackageIcon.png</PackageIcon>
 		<PackageLicenseFile>License.md</PackageLicenseFile>

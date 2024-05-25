@@ -56,14 +56,6 @@
 		<DefineConstants>$(DefineConstants);R20_OR_GREATER;R21_OR_GREATER;R22_OR_GREATER;R23_OR_GREATER;R24_OR_GREATER;R25_OR_GREATER</DefineConstants>
 	</PropertyGroup>
 
-
-    <PropertyGroup>
-        <Version>$(RevitVersion)</Version>
-        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    </PropertyGroup>
-
     <PropertyGroup>
         <StartAction>Program</StartAction>
         <StartProgram>C:\Program Files\Autodesk\Revit $(RevitVersion)\Revit.exe</StartProgram>

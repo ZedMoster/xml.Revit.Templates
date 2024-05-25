@@ -14,7 +14,17 @@
 1. 安装 [.Net SDK](https://dotnet.microsoft.com/download)
 2. 运行 `dotnet new install xml.Revit.Templates` 安装更新项目模板
 
+安装完成后
+
+启动 `Visual Studio 2022`
+
+新建项目中找到 `xml.Revit.Templates` 模板输入项目名称完成项目创建
+
+编译通过则安装完成并正确使用可以在这个模板下愉快的写代码咯 ~hahaha~
+
 ## code snipate
+
+创建代码片段快速创建Revit命令
 
 <p align="left">
     <picture>
@@ -49,19 +59,25 @@
 			<Declarations>
 				<Literal>
 					<ID>name</ID>
-					<ToolTip>类名</ToolTip>
+					<ToolTip>请输入功能类名</ToolTip>
 					<Default>Test</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp"><![CDATA[
-			[Xml("功能名称")]
-			[Transaction(TransactionMode.Manual)]
-			public class Cmd$name$ : XmlExternalCommand
+			using System.Diagnostics;
+			using Autodesk.Revit.DB;
+
+			namespace xml.Revit.AddIn
 			{
-				protected override void Execute(ref string message, ElementSet elements)
+				[Xml("输入功能名称")]
+				[Transaction(TransactionMode.Manual)]
+				public class Cmd$name$ : XmlExternalCommand
 				{
-					throw new NotImplementedException();
-				}		
+					protected override void Execute(ref string message, ElementSet elements)
+					{
+						XmlDoc.Print(uidoc.Document.Title);
+					}
+				}
 			}
 			]]>
 			</Code>
