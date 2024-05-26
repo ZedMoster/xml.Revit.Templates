@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
-using Autodesk.Revit.DB;
-
-namespace xml.Revit.AddIn
+﻿namespace xml.Revit.AddIn
 {
     [Xml("输入功能名称")]
     [Transaction(TransactionMode.Manual)]
