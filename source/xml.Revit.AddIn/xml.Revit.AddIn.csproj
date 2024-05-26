@@ -66,11 +66,18 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Using Include="CommunityToolkit.Mvvm.ComponentModel" />
+        <Using Include="CommunityToolkit.Mvvm.Input" />	
         <Using Include="Autodesk.Revit.Attributes" />
         <Using Include="Autodesk.Revit.DB" />
         <Using Include="Autodesk.Revit.UI" />
-        <Using Include="xml.Revit.Toolkit.Attributes"/>
-        <Using Include="xml.Revit.Toolkit.Utils"/>
+        <Using Include="xml.Revit.Toolkit.Base" />
+        <Using Include="xml.Revit.Toolkit.Utils" />
+        <Using Include="xml.Revit.Toolkit.Models" />
+        <Using Include="xml.Revit.Toolkit.Helpers" />
+        <Using Include="xml.Revit.Toolkit.Interfaces" />
+        <Using Include="xml.Revit.Toolkit.Attributes" />
+        <Using Include="xml.Revit.Toolkit.Extensions" />
     </ItemGroup>
 
     <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
