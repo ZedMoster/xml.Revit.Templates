@@ -5,8 +5,8 @@
         <LangVersion>latest</LangVersion>
         <PlatformTarget>x64</PlatformTarget>
         <ImplicitUsings>true</ImplicitUsings>
-		<Configurations>Debug R20;Debug R21;Debug R22;Debug R23;Debug R24;Debug R25</Configurations>
-		<Configurations>$(Configurations);Release R20;Release R21;Release R22;Release R23;Release R24;Release R25</Configurations>
+        <Configurations>Debug R20;Debug R21;Debug R22;Debug R23;Debug R24;Debug R25</Configurations>
+        <Configurations>$(Configurations);Release R20;Release R21;Release R22;Release R23;Release R24;Release R25</Configurations>
     </PropertyGroup>
 
     <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
@@ -49,12 +49,12 @@
         <DefineConstants>$(DefineConstants);R24</DefineConstants>
         <DefineConstants>$(DefineConstants);R20_OR_GREATER;R21_OR_GREATER;R22_OR_GREATER;R23_OR_GREATER;R24_OR_GREATER</DefineConstants>
     </PropertyGroup>
-	<PropertyGroup Condition="$(Configuration.Contains('R25'))">
-		<RevitVersion>2025</RevitVersion>
-		<TargetFramework>net8.0-windows</TargetFramework>
-		<DefineConstants>$(DefineConstants);R25</DefineConstants>
-		<DefineConstants>$(DefineConstants);R20_OR_GREATER;R21_OR_GREATER;R22_OR_GREATER;R23_OR_GREATER;R24_OR_GREATER;R25_OR_GREATER</DefineConstants>
-	</PropertyGroup>
+    <PropertyGroup Condition="$(Configuration.Contains('R25'))">
+        <RevitVersion>2025</RevitVersion>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <DefineConstants>$(DefineConstants);R25</DefineConstants>
+        <DefineConstants>$(DefineConstants);R20_OR_GREATER;R21_OR_GREATER;R22_OR_GREATER;R23_OR_GREATER;R24_OR_GREATER;R25_OR_GREATER</DefineConstants>
+    </PropertyGroup>
 
     <PropertyGroup>
         <StartAction>Program</StartAction>
@@ -63,23 +63,23 @@
 
     <ItemGroup>
         <PackageReference Include="xml.Revit.Toolkit" Version="$(RevitVersion).*"/>
-	</ItemGroup>
+    </ItemGroup>
 
     <ItemGroup>
-		<Using Include="Autodesk.Revit.Attributes" />
-		<Using Include="Autodesk.Revit.DB" />
-		<Using Include="Autodesk.Revit.UI" />
+        <Using Include="Autodesk.Revit.Attributes" />
+        <Using Include="Autodesk.Revit.DB" />
+        <Using Include="Autodesk.Revit.UI" />
         <Using Include="xml.Revit.Toolkit.Attributes"/>
         <Using Include="xml.Revit.Toolkit.Utils"/>
     </ItemGroup>
 
-	<PropertyGroup Condition="$(Configuration.Contains('Debug'))">
-		<Version>1.0.0</Version>
-		<IncludePackageReferencesDuringMarkupCompilation>false</IncludePackageReferencesDuringMarkupCompilation>
-		<Revision>$([MSBuild]::Divide($([System.DateTime]::Now.TimeOfDay.TotalSeconds), 4).ToString('F0'))</Revision>
-		<PackageAssemblyVersion>.$(Version).$(Revision)</PackageAssemblyVersion>
-		<AssemblyName>$(AssemblyName)$(PackageAssemblyVersion)</AssemblyName>
-	</PropertyGroup>
+    <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
+        <Version>1.0.0</Version>
+        <IncludePackageReferencesDuringMarkupCompilation>false</IncludePackageReferencesDuringMarkupCompilation>
+        <Revision>$([MSBuild]::Divide($([System.DateTime]::Now.TimeOfDay.TotalSeconds), 4).ToString('F0'))</Revision>
+        <PackageAssemblyVersion>.$(Version).$(Revision)</PackageAssemblyVersion>
+        <AssemblyName>$(AssemblyName)$(PackageAssemblyVersion)</AssemblyName>
+    </PropertyGroup>
 
     <Target Name="CopyFiles" AfterTargets="CoreBuild">
         <ItemGroup>

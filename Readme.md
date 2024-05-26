@@ -16,30 +16,21 @@
 
 安装完成后
 
-启动 `Visual Studio 2022`
+启动 **Visual Studio 2022**
 
 新建项目中找到 `xml.Revit.Templates` 模板输入项目名称完成项目创建
 
-编译通过则安装完成并正确使用可以在这个模板下愉快的写代码咯 ~hahaha~
+编译通过则安装完成并正确使用可以在这个模板下愉快的写代码咯
 
 ## code snipate
 
 创建代码片段快速创建Revit命令
 
-<p align="left">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" width="750" srcset="https://raw.githubusercontent.com/ZedMoster/xml.Revit.Templates/main/assets/xmlRevitCommand.gif">
-        <img alt="xmlRevitCommand" width="750" src="https://raw.githubusercontent.com/ZedMoster/xml.Revit.Templates/main/assets/xmlRevitCommand.gif">
-    </picture>
-</p>
-
 打开文件夹
 
 `C:\Program Files\Microsoft Visual Studio\2022\Community\VC#\Snippets\2052\Visual C#`
 
-在文件夹内新建 `xmlRevitCommand.snippet` 文件
-
-并粘贴下方全部内容到此文件中后保存
+在文件夹内新建 `xmlRevitCommand.snippet` 文件并粘贴下方全部内容到此文件中后保存
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,6 +75,13 @@
 
 ```
 
-重新启动 `Visual Studio 2022` 
+重新启动 **Visual Studio 2022**
 
 输入 `xmlRevitCommand`命令可快速创建Revit功能命令
+
+<p align="left">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" width="750" srcset="https://raw.githubusercontent.com/ZedMoster/xml.Revit.Templates/main/assets/xmlRevitCommand.gif">
+        <img alt="xmlRevitCommand" width="750" src="https://raw.githubusercontent.com/ZedMoster/xml.Revit.Templates/main/assets/xmlRevitCommand.gif">
+    </picture>
+</p>
