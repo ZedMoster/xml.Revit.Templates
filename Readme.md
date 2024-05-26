@@ -64,9 +64,6 @@
 				</Literal>
 			</Declarations>
 			<Code Language="csharp"><![CDATA[
-			using System.Diagnostics;
-			using Autodesk.Revit.DB;
-
 			namespace xml.Revit.AddIn
 			{
 				[Xml("输入功能名称")]
