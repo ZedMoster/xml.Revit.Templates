@@ -7,6 +7,8 @@
 
 该模板包含用于快速创建 Revit 附加命令的项目模板
 
+默认支持Revit版本18~25
+
 推荐使用拓展包 `https://www.nuget.org/packages/xml.Revit.Toolkit`
 
 ## Installation

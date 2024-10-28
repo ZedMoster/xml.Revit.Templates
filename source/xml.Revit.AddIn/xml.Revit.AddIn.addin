@@ -5,7 +5,7 @@
         <AddInId>AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA</AddInId>
         <FullClassName>xml.Revit.AddIn.Application</FullClassName>
         <VendorId>xml</VendorId>
-        <VendorEmail>zedmoster1@gmail.com</VendorEmail>
+        <VendorEmail>1505636116@qq.com</VendorEmail>
         <VendorDescription>微信公众号:Revit二次开发教程</VendorDescription>
     </AddIn>
 </RevitAddIns>

@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "xml",
   "name": "xml Revit AddIn",
-  "shortName": "xml-revit-addin",
+  "shortName": "xmlRevit",
   "identity": "xml.Revit.AddIn",
   "defaultName": "xmlRevitAddIn",
   "sourceName": "xml.Revit.AddIn",
