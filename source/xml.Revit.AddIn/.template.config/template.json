@@ -6,7 +6,7 @@
   "identity": "xml.Revit.AddIn",
   "defaultName": "xmlRevitAddIn",
   "sourceName": "xml.Revit.AddIn",
-  "description": "Template for creating a Revit add-in",
+  "description": "Revit开发模板项目",
   "classifications": [
     "Revit",
     "AddIn",
