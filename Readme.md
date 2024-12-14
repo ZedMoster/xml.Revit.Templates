@@ -4,7 +4,6 @@
 [![Downloads](https://img.shields.io/nuget/dt/xml.Revit.Templates?style=for-the-badge)](https://www.nuget.org/packages/xml.Revit.Templates)
 [![Last Commit](https://img.shields.io/github/last-commit/ZedMoster/xml.Revit.Templates/dev?style=for-the-badge)](https://github.com/ZedMoster/xml.Revit.Templates/commits/main)
 
-
 该模板包含用于快速创建 Revit 附加命令的项目模板
 
 默认支持Revit版本18~25
@@ -32,54 +31,51 @@
 
 `C:\Program Files\Microsoft Visual Studio\2022\Community\VC#\Snippets\2052\Visual C#`
 
-在文件夹内新建 `xmlRevitCommand.snippet` 文件并粘贴下方全部内容到此文件中后保存
+在文件夹内新建 `xmlRevitCmd.snippet` 文件并粘贴下方全部内容到此文件中后保存
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-	<CodeSnippet Format="1.0.0">
-		<Header>
-			<Title>xmlRevitCmd</Title>
-			<Shortcut>xmlRevitCmd</Shortcut>
-			<Description>xml Revit Command 的代码片段</Description>
-			<Author>xml</Author>
-			<SnippetTypes>
-				<SnippetType>Expansion</SnippetType>
-				<SnippetType>SurroundsWith</SnippetType>
-			</SnippetTypes>
-		</Header>
-		<Snippet>
-			<Declarations>
-				<Literal>
-					<ID>name</ID>
-					<ToolTip>请输入功能类名</ToolTip>
-					<Default>Test</Default>
-				</Literal>
-			</Declarations>
-			<Code Language="csharp"><![CDATA[
-			namespace xml.Revit.AddIn
-			{
-				[Xml("输入功能名称")]
-				[Transaction(TransactionMode.Manual)]
-				public class Cmd$name$ : XmlExternalCommand
-				{
-					protected override void Execute(ref string message, ElementSet elements)
-					{
-						XmlDoc.Print(uidoc.Document.Title);
-					}
-				}
-			}
-			]]>
-			</Code>
-		</Snippet>
-	</CodeSnippet>
+ <CodeSnippet Format="1.0.0">
+  <Header>
+   <Title>xmlRevitCmd</Title>
+   <Shortcut>xmlRevitCmd</Shortcut>
+   <Description>xml Revit Command 的代码片段</Description>
+   <Author>xml</Author>
+   <SnippetTypes>
+    <SnippetType>Expansion</SnippetType>
+    <SnippetType>SurroundsWith</SnippetType>
+   </SnippetTypes>
+  </Header>
+  <Snippet>
+   <Declarations>
+    <Literal>
+     <ID>name</ID>
+     <ToolTip>请输入功能类名</ToolTip>
+     <Default>Test</Default>
+    </Literal>
+   </Declarations>
+   <Code Language="csharp"><![CDATA[
+    [Xml("$name$")]
+    [Transaction(TransactionMode.Manual)]
+    internal sealed class Cmd$name$ : XmlExternalCommand
+    {
+     protected override void Execute(ref string message, ElementSet elements)
+     {
+      XmlDoc.Print(uidoc.Document.Title);
+     }
+    }
+   ]]>
+   </Code>
+  </Snippet>
+ </CodeSnippet>
 </CodeSnippets>
 
 ```
 
 重新启动 **Visual Studio 2022**
 
-输入 `xmlRevitCommand`命令可快速创建Revit功能命令
+输入 `xmlRevitCmd`命令可快速创建Revit功能命令
 
 <p align="left">
     <picture>
