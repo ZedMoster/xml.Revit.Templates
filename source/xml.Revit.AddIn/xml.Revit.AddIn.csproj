@@ -67,12 +67,4 @@
 		<Using Include="xml.Revit.Toolkit.Extensions" />
 	</ItemGroup>
 
-    <!--<PropertyGroup Condition="$(Configuration.Contains('Debug'))">
-        <Version>1.0.0</Version>
-        <IncludePackageReferencesDuringMarkupCompilation>false</IncludePackageReferencesDuringMarkupCompilation>
-        <Revision>$([MSBuild]::Divide($([System.DateTime]::Now.TimeOfDay.TotalSeconds), 4).ToString('F0'))</Revision>
-        <PackageAssemblyVersion>.$(Version).$(Revision)</PackageAssemblyVersion>
-        <AssemblyName>$(AssemblyName)$(PackageAssemblyVersion)</AssemblyName>
-    </PropertyGroup>-->
-
 </Project>
