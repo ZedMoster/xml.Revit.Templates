@@ -3,9 +3,9 @@
         <Name>xml.Revit.AddIn</Name>
         <Assembly>xml.Revit.AddIn/xml.Revit.AddIn.dll</Assembly>
         <AddInId>AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA</AddInId>
-        <FullClassName>xml.Revit.AddIn.App</FullClassName>
+        <FullClassName>xml.Revit.AddIn.ExternalApplication</FullClassName>
         <VendorId>zedmoster</VendorId>
-        <VendorEmail>1505636116@qq.com</VendorEmail>
+        <VendorEmail>zedmoster1@gmail.com</VendorEmail>
         <VendorDescription>微信公众号:Revit二次开发教程</VendorDescription>
     </AddIn>
 </RevitAddIns>
